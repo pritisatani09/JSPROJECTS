@@ -1,0 +1,74 @@
+/* ******************************** count down ***************************************** */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(Image/360_F_731415156_Y8UOx6FIgLdSB9IWMxhyv5msP5jY6fyb.jpg);
+      background-size: cover; 
+      background-position: bottom;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .countdown-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #d1495b;;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .time-box {
+    background: #ffe5d9;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .time-box:hover {
+    transform: scale(1.1);
+    background: #ffcdb2;
+    cursor: pointer;
+  }
+  
+  .time-box span {
+    display: block;
+    font-size: 2.5rem;
+    color: #d1495b;
+    font-weight: bold;
+  }
+  
+  .time-box small {
+    font-size: 0.9rem;
+    color: #444;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
