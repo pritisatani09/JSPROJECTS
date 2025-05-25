@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Weather App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <form>
+      <input type="text" id="name" placeholder="Enter city name..." autocomplete="off">
+      <button type="submit"><i class="fa-solid fa-search"></i></button>
+    </form>
+    <section class="result">
+      <figure class="name">
+        <figcaption>City</figcaption>
+        <img src="https://flagsapi.com/US/shiny/32.png" alt="flag">
+      </figure>
+      <figure class="temperature">
+        <img src="https://openweathermap.org/img/wn/01d@4x.png" alt="weather">
+        <figcaption><span>--</span><sup>°</sup></figcaption>
+      </figure>
+      <p class="description">Weather Description</p>
+      <ul>
+        <li>
+          <span>Clouds</span>
+          <i class="fa-solid fa-cloud"></i>
+          <span id="clouds">--</span>%
+        </li>
+        <li>
+          <span>Humidity</span>
+          <i class="fa-solid fa-droplet"></i>
+          <span id="humidity">--</span>%
+        </li>
+        <li>
+          <span>Wind</span>
+          <i class="fa-solid fa-wind"></i>
+          <span id="wind">--</span> km/h
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

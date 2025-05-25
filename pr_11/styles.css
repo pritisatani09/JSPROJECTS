@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f0f0;
+  color: #333;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Light blur overlay on background image using a pseudo-element */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('./images/img-ct-covid-crisis-tips-for-law-firms.jpg') no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(6px) brightness(0.85);
+  z-index: -1;
+}
+
+h1 {
+  padding-top: 30px;
+  font-weight: 800;
+  color: #fcfcfc;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
+}
+
+.container {
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  backdrop-filter: blur(8px);
+}
+
+input, button {
+  padding: 12px;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+input {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #007ea7;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f7f;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #fbfbfb;
+  text-shadow: 1px 1px 2px #ffffffcc;
+}
+
+#stateData {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Updated card styling with new color accents */
+.card {
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 15px;
+  padding: 20px;
+  color: #2e2e2e;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #007ea7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h5 {
+  color: #004d61;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.card p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #444;
+}
